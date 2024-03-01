@@ -1,0 +1,59 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    font-family: Arial, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li:hover > a {
+    background-color: #ddd;
+}
+
+.menu ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+}
+
+.menu ul li:hover > ul.submenu {
+    display: block;
+}
+
+.menu ul li ul.submenu li {
+    display: block;
+}
+
+.menu ul li ul.submenu li a {
+    padding: 10px 20px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li ul.submenu li a:hover {
+    background-color: #ddd;
+}

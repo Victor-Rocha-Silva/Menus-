@@ -1,0 +1,81 @@
+/* Define margens e preenchimentos padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #EAE0AC;
+}
+
+/* Estilos para mostrar/esconder o menu de navegação quando a caixa de seleção é marcada */
+input[type="checkbox"]:checked~nav {
+    transform: translateX(350px);
+}
+
+/* Esconde a caixa de seleção padrão */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilos básicos para links */
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 8px 5px;
+    color: white;
+}
+
+/* Estilos para links quando o mouse está sobre eles */
+a:hover {
+    background-color: blue;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    background-color: #1a7fb9;
+    opacity: 90%;
+    width: 350px;
+    height: 25%;
+    left: -350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+/* Estilos para listas não ordenadas dentro do menu de navegação */
+ul {
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+/* Estilos para rótulos (labels) usados provavelmente para associar com a caixa de seleção */
+label {
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+    background-color: #1a7fb9;
+    color: white;
+    font-size: 45;
+}
+
+/* Estilos para a imagem dentro do cabeçalho */
+header img {
+    margin-left: 95%;
+}
+
+/* Estilos para o título do cabeçalho */
+header h1 {
+    position: absolute;
+    left: 45%;
+}
